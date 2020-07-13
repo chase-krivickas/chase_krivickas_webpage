@@ -3,6 +3,6 @@
 
 Short assignment 3, starter pack
 
-[webpage url](chase-krivickas-cs52-starter.surge.sh)
+url : chase-krivickas-cs52-starter.surge.sh
 
 
