@@ -1,11 +1,8 @@
-# Title
+# Chase Krivickas
+# SA3, CS52 Summer 2020
 
-*description*
+Short assignment 3, starter pack
 
-[deployed url](http://url-if-deployed-here)
+[deployed url](chase-krivickas-cs52-starter.surge.sh)
 
-## What Worked Well
 
-## What Didn't
-
-## Screenshots
