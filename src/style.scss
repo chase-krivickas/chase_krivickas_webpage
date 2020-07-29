@@ -5,9 +5,12 @@ body, html {
   }
 
   .logo {
-    background-image: url('img/salt_marsh_sky.jpg');
     width: 100px;
     height: 100px;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .active {
+    color: pink;
   }
