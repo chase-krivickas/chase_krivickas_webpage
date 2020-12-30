@@ -1,0 +1,17 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+}
+
+.navbutton:hover {
+    background-color: white;
+}
+
+
