@@ -1,40 +1,75 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<style>
+			.home_cont {
+				/* The image used */
+				background-image: url("./media/mountains.JPG");
+			
+				/* Full height */
+				height: 100%; 
+			
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
 
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <title>Chase Krivickas</title>
-
-  </head>
-
-  <body>
-    <header>
-			<nav class="navbar">
-				<ul class="navbutton">Home</ul>
-				<ul class="navbutton">About</ul>
-				<ul class="navbutton">Resume</ul>
-				<ul class="navbutton">Projects</ul>
-				<ul class="navbutton">Activities</ul>
-				<ul class="navbutton">Contact</ul>
+	<body>
+		<!-- Navigation Bar -->
+		<header class="head">
+			<nav role="navigation">
+				<div class="tabs">
+						<div class="tab">
+								<a href="#" class="tab_title">Home</a>
+						</div>
+	
+						<div class="tab">
+								<a class="tab_title">About</a>
+						</div>
+	
+						<div class="tab">
+								<a  class="tab_title">Resume</a>
+						</div>
+	
+						<div class="tab">
+								<a class="tab_title">Projects</a>
+						</div>
+	
+						<div class="tab">
+								<a class="tab_title">Activities</a>
+						</div>
+	
+						<div class="tab">
+							<a class="tab_title">Design</a>
+						</div>
+	
+						<div class="tab">
+							<a class="tab_title">Contact</a>
+						</div>
+					</div>
 			</nav>
-		</header>
+			</header>
 
-		<div class="section_cont">
-			<div class="home_cont">
-				<h1>Chase Krivickas</h1>
-				<h2>Software Engineer | Dartmouth</h2>
-				<h2>Graduate Fall 2021</h2>
+
+		<!-- Home -->
+		<div class="home_cont">
+			<div class="home_text">
+				<div class="text_cont">
+					<h1>Chase Krivickas</h1>
+					<h2>Software Engineer | Dartmouth College</h2>
+				</div>
 			</div>
-
-			<div class="about_cont">
-				
-			</div>
-
 		</div>
 
+		<!-- About -->
+		<div class="about_cont">
+			<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+		</div>
 
-    
-  </body>
+	</body>
 </html>
