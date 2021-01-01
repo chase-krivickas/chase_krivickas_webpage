@@ -1,44 +1,89 @@
+/* deep_blue: #6c9ecf; */
+/* secondary #ac9572 */
+
 body, html {
+    font-family: Arial;
     height: 100%;
-      margin: 0;
-      padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .head {
-    position: sticky;
+    position: absolute;
+    width: 100%;
     top: 0;
     z-index: 10;
 }
 
 /* navbar */
+.title_bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 24px;
+    background-color: none;
+}
+.title_bar > a {
+    color: black;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+.title_bar > a:hover {
+    color: #6c9ecf;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+.name_bar {
+    background-color: white;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+.name_bar > h1 {
+    margin: 10px;
+    padding-left: 10px;
+}
+
 .tabs {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    background: black;
+    background:black;
     margin: 0;
     padding: 0px;
 }
 .tab {
     color: #fff;
-    background: black;
-    padding: 15px;
+    background: none;
     position: relative;
     padding: 15px;
 }
-.tab .tab_title {
+.tab > .tab_title {
   color: #fff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
 }
-.tab:hover {
-    background: grey;
+.tab_title:hover {
+    color: #ac9572;
     cursor: pointer;
     text-decoration: none;
 }
 
 /* Home */
 .home_text {
+    background-color: rgb(0,0,0,0.4);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,14 +95,62 @@ body, html {
     width: 100%;
 }
 .text_cont {
-    width: 50%;
-    height: 25%;
-    background-color: black;
+    width: 100%;
+    padding: 30px;
+    margin: 0;
+}
+.text_cont > h1, h2, h3 {
+    color: white;
+    padding: 0;
+    margin: 0;
     padding: 10px;
 }
-.text_cont > h1, h2 {
-    color: white;
+.text_cont > h1 {
+    font-size: 7vw;
+    font-weight: bold;
 }
+.text_cont > h2 {
+    font-size: 3vw;
+}
+.text_cont > h3 {
+    font-size: 2vw;
+}
+.icon_cont {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.icon_cont > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+}
+.icon_cont > a:hover {
+    color: #6c9ecf;
+}
+#down_arrow {
+    font-size: 50px;
+    position: absolute;
+    bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#down_arrow > .fa-arrow-down {
+    color: white;
+    
+}
+#down_arrow > .fa-arrow-down:hover {
+    color: #6c9ecf;
+    cursor: pointer;
+}
+
+
 
 /* About */
 .about_cont {
