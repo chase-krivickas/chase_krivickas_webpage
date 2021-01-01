@@ -14,6 +14,19 @@ body, html {
     z-index: 10;
 }
 
+/* Common */
+.section_header {
+    margin: 0;
+    padding-top: 100px;
+    color: #ac9572;
+    font-size: 30px;
+}
+.section_sub_header {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
 /* navbar */
 .title_bar {
     position: absolute;
@@ -79,6 +92,27 @@ body, html {
     color: #ac9572;
     cursor: pointer;
     text-decoration: none;
+}
+#floating_nav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ac9572;
+}
+.f_tab {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 15px;
+}
+.f_tab:hover {
+    color: black;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Home */
@@ -168,11 +202,6 @@ body, html {
     color: white;
     font-size: 3vw;
 }
-.about_cont > h2 {
-    margin: 0;
-    padding-top: 50px;
-    color: #ac9572;
-}
 .bio_cont {
     display: flex;
     flex-direction: row;
@@ -207,14 +236,18 @@ body, html {
     padding-top: 30px;
     font-size: 25px;
 }
-.resume_cont > h1 {
-    padding: 0;
-    margin: 0;
-}
 .resume_cont > h2 {
     margin: 0;
     padding-top: 40px;
+    color: #6c9ecf;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.resume_cont > .section_header {
     color: #ac9572;
+    text-align: center;
+    padding-top: 100px;
 }
 #cv_button {
     color: white;
@@ -288,3 +321,32 @@ body, html {
     line-height: 1.5;
 }
 
+/* Projects Section */
+.projects_cont {
+    background-color: rgb(207, 204, 204);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.projects_cont > h2 {
+    color: #ac9572;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+}
+.projects_cont > h1 {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.projects_image_box {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.project_image {
+    width: 20%;
+    padding: 2%;
+}

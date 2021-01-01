@@ -29,18 +29,18 @@
 
 
 		<!-- Home -->
-		<div class="home_cont">
+		<div id="home" class="home_cont">
 			<div class="home_text">
 				<div class="text_cont">
 					<h1>Chase Krivickas</h1>
 					<h2>Software Engineer | Dartmouth College</h2>
 					<h3>background photo: Bighorn Mountains, WY</h3>
 					<div class="icon_cont">
-						<a href="www.google.com">
-							<i class="fa fa-github"></i>
+						<a>
+							<i id="github_button" class="fa fa-github"></i>
 						</a>
-						<a href="www.google.com">
-							<i class="fa fa-linkedin-square"></i>
+						<a>
+							<i id="linked_in_button" class="fa fa-linkedin-square"></i>
 						</a>
 						<a href="www.google.com">
 							<i class="fa fa-envelope"></i>
@@ -53,9 +53,20 @@
 			</div>
 		</div>
 
+		<!-- Floating Navbar -->
+		<div id="floating_nav">
+			<a class="f_tab" id="f_home_tab">Home</a>
+			<a class="f_tab" id="f_about_tab">About</a>
+			<a class="f_tab" id="f_resume_tab">Resume</a>
+			<a class="f_tab" id="f_projects_tab">Projects</a>
+			<a class="f_tab" id="f_design_tab">Design</a>
+			<a class="f_tab" id="f_activities_tab">Activites</a>
+			<a class="f_tab" id="f_contact_tab">Contact</a>
+		</div>
+
 		<!-- About -->
 		<div id="about" class="about_cont">
-			<h2>About</h2>
+			<h2 class="section_header">About</h2>
 			<h1>Let me introduce myself.</h1>
 			<div class="bio_cont">
 				<img src="./media/linkedin2.jpg" alt="Avatar">
@@ -65,9 +76,9 @@
 		</div>
 
 		<!-- Resume -->
-		<div class="resume_cont">
-			<h2 id="resume_title">Resume</h2>
-			<h1>My Education, Course Work, and Work Experience</h1>
+		<div id="resume" class="resume_cont">
+			<h2 class="section_header">Resume</h2>
+			<h1 class="section_sub_header">My Education, Course Work, and Work Experience</h1>
 
 			<h2>Education</h2>
 			<div class="entry">
@@ -161,25 +172,30 @@
 			</div>
 
 			<button id="cv_button">Download CV</button>
-
-
-
 		</div>
 
+		<!-- Projects -->
+		<div id="projects" class="projects_cont">
+			<h2 class="section_header">Projects</h2>
+			<h1 class="section_sub_header">Check out my creations.</h1>
+			<div class="projects_image_box">
+				<img class="project_image" src="./media/dartmouth_logo.png">
+			</div>
+		</div>
 
 		<!-- Navigation Bar -->
 		<header class="head">
-			<nav role="navigation">
+			<nav id="home_navbar" role="navigation">
 				<div class="name_bar">
 					<h1>Chase Krivickas</h1>
 				</div>
 				
 				<div class="title_bar">
-					<a href="www.google.com">
-						<i class="fa fa-github"></i>
+					<a>
+						<i id="github_button2" class="fa fa-github"></i>
 					</a>
-					<a href="www.google.com">
-						<i class="fa fa-linkedin-square"></i>
+					<a>
+						<i id="linked_in_button2" class="fa fa-linkedin-square"></i>
 					</a>
 					<a href="www.google.com">
 						<i class="fa fa-envelope"></i>
@@ -188,35 +204,36 @@
 
 				<div class="tabs">
 						<div class="tab">
-								<a href="#" class="tab_title" style="color: #ac9572;">Home</a>
+								<a id="home_tab" class="tab_title">Home</a>
 						</div>
 	
 						<div class="tab">
-								<a href="#" class="tab_title">About</a>
+								<a id="about_tab" class="tab_title">About</a>
 						</div>
 	
 						<div class="tab">
-								<a  class="tab_title">Resume</a>
+								<a id="resume_tab" class="tab_title">Resume</a>
 						</div>
 	
 						<div class="tab">
-								<a class="tab_title">Projects</a>
+								<a id="projects_tab" class="tab_title">Projects</a>
 						</div>
 	
 						<div class="tab">
-								<a class="tab_title">Design</a>
+								<a id="desgin_tab" class="tab_title">Design</a>
 						</div>
 	
 						<div class="tab">
-							<a class="tab_title">Activities</a>
+							<a id="activities_tab" class="tab_title">Activities</a>
 						</div>
 	
 						<div class="tab">
-							<a class="tab_title">Contact</a>
+							<a id="contact_tab" class="tab_title">Contact</a>
 						</div>
 					</div>
 			</nav>
 			</header>
 
+			<script src="main.js"></script>
 	</body>
 </html>
