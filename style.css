@@ -155,13 +155,136 @@ body, html {
 /* About */
 .about_cont {
     width: 100%;
-    height: 500px;
     background-color: black;
     padding: 0;
+    padding-bottom: 50px;
     margin: 0;
+    align-items: center;
+    text-align: center;
 }
-.about_cont > p {
+.about_cont > h1, p {
     margin: 0;
     padding: 0;
     color: white;
+    font-size: 3vw;
 }
+.about_cont > h2 {
+    margin: 0;
+    padding-top: 50px;
+    color: #ac9572;
+}
+.bio_cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15vw;
+    padding-left: 15vw;
+    padding-top: 30px;
+}
+.bio_cont > img {
+    border-radius: 50%;
+    height: 15vw;
+    border: 5px solid #ac9572;
+}
+.bio_cont > p {
+    text-align: left;
+    padding-left: 3vw;
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+/* Resume Section */
+.resume_cont {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 50px;
+}
+#resume_title {
+    padding-top: 30px;
+    font-size: 25px;
+}
+.resume_cont > h1 {
+    padding: 0;
+    margin: 0;
+}
+.resume_cont > h2 {
+    margin: 0;
+    padding-top: 40px;
+    color: #ac9572;
+}
+#cv_button {
+    color: white;
+    font-size: 20px;
+    background-color: #6c9ecf;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+#cv_button:hover {
+    background-color: gray;
+}
+/* Resume Entries */
+.entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+.entry_image {
+    border-radius: 50%;
+    height: 50px;
+}
+.entry_main {
+    text-align: left;
+    width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0;
+}
+.entry_main > h3 {
+    color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+.entry_main > h4 {
+    color: black;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    font-size: 12px;
+}
+.entry_main > p {
+    color: black;
+    font-size: 12px;
+    padding-top: 5px;
+}
+.entry_sub {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+}
+.entry_sub > p {
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+}
+/* Course list */
+.courses > ul {
+    text-align: left;
+    font-size: 15px;
+    list-style-type: circle;
+    line-height: 1.5;
+}
+
