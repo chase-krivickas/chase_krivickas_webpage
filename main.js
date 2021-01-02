@@ -35,6 +35,9 @@ var contactSection = document.getElementById("contact");
 // Home section
 var homeDownArrow = document.getElementById("down_arrow");
 
+// Resume section
+var cvButton = document.getElementById("cv_button");
+
 // Connect
 var linkedInLink = document.getElementById("linked_in_link");
 
