@@ -2,8 +2,10 @@
 // nav bar and top bar
 var githubButton = document.getElementById("github_button");
 var linkedInButton = document.getElementById("linked_in_button");
+var emailButton = document.getElementById("email_button");
 var githubButton2 = document.getElementById("github_button2");
 var linkedInButton2 = document.getElementById("linked_in_button2");
+var emailButton2 = document.getElementById("email_button2");
 
 var homeNavBar = document.getElementById("home_navbar");
 var floatingNavBar = document.getElementById("floating_nav");
@@ -28,9 +30,13 @@ var homeSection = document.getElementById("home");
 var aboutSection = document.getElementById("about");
 var resumeSection = document.getElementById("resume");
 var projectsSection = document.getElementById("projects");
+var contactSection = document.getElementById("contact");
 
 // Home section
 var homeDownArrow = document.getElementById("down_arrow");
+
+// Connect
+var linkedInLink = document.getElementById("linked_in_link");
 
 
 
@@ -44,18 +50,28 @@ resumeTab.onclick = function() {
 projectsTab.onclick = function() {
     projectsSection.scrollIntoView({ behavior: 'smooth' }); 
 }
-// Github and Linked in links
+contactTab.onclick = function() {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Github and Linked in links, and email
 githubButton.onclick = function() {
     window.open("https://github.com/chase-krivickas", "_blank");
 }
 linkedInButton.onclick = function() {
     window.open("https://www.linkedin.com/in/chase-krivickas", "_blank");
 }
+emailButton.onclick = function() {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+}
 githubButton2.onclick = function() {
     window.open("https://github.com/chase-krivickas", "_blank");
 }
 linkedInButton2.onclick = function() {
     window.open("https://www.linkedin.com/in/chase-krivickas", "_blank");
+}
+emailButton2.onclick = function() {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
 }
 
 
@@ -73,6 +89,9 @@ fResumeTab.onclick = function() {
 fProjectsTab.onclick = function() {
     projectsSection.scrollIntoView({ behavior: 'smooth' }); 
 }
+fContactTab.onclick = function() {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+}
 
 
 // Home section-----------------------------------------------------------------//
@@ -81,6 +100,10 @@ homeDownArrow.onclick = function() {
     aboutSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+// Connect section-----------------------------------------------------------------//
+linkedInLink.onclick = function() {
+    window.open("https://www.linkedin.com/in/chase-krivickas", "_blank");
+}
 
 
 
@@ -101,9 +124,11 @@ window.onscroll = function() {
     if (isScrolledIntoView(homeSection)) {
         homeNavBar.style.display = "grid";
         floatingNavBar.classList.remove("sticky");
+        homeDownArrow.style.display = "grid";
     } else {
         homeNavBar.style.display = "none";
         floatingNavBar.classList.add("sticky");
+        homeDownArrow.style.display = "none";
     }
     // about section
     
