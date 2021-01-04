@@ -24,9 +24,8 @@
 		</style>
 	</head>
 
-	<body>
-		
-
+	<body onload="hide_windows()">		
+		<!-- <body> -->
 
 		<!-- Home -->
 		<div id="home" class="home_cont">
@@ -76,7 +75,7 @@
 			<div class="about_sub_section">
 				<div class="profile">
 					<h3>Profile</h3>
-					<p>I am currently seeking a software engineering internship for the summer of 2021. If you think I am a good fit please email me at <a href = "mailto: abc@example.com" style="color: #6c9ecf;">chase.j.krivickas.21@dartmouth.edu</a>.  </p>
+					<p>I am currently seeking a software engineering internship for the summer of 2021. If you think I am a good fit please email me at <a href = "mailto: abc@example.com" style="color: darkgray;">chase.j.krivickas.21@dartmouth.edu</a>.  </p>
 					<h4>Expected Graduation Date</h4>
 					<p>November 2021</p>
 					<h4>Location</h4>
@@ -221,9 +220,57 @@
 		<!-- Projects -->
 		<div id="projects" class="projects_cont">
 			<h2 class="section_header">Projects</h2>
-			<h1 class="section_sub_header">Check out my creations.</h1>
+			<h1 class="section_sub_header">Check out some of my creations.</h1>
+			<div class="project_dir">Select a project to see more information.</div>
+
 			<div class="projects_image_box">
-				<img class="project_image" src="./media/dartmouth_logo.png">
+				<img id="jira" class="project_image" src="./media/jira_logo.png">
+				<img id="hypertherm" class="project_image" src="./media/hypertherm_logo.png">
+				<img id="sublit" class="project_image" src="./media/sublit_logo.png">
+				<img id="gamepole" class="project_image" src="./media/gamepole_logo.png">
+				<img id="myruns" class="project_image" src="./media/myruns_logo.png">
+				<img id="website" class="project_image" src="./media/website_logo.png">
+			</div>
+
+		</div>
+
+		<div id="project_detail" class="pop_background">
+			<div class="pop_up">
+				<div class="pop_up_box">
+					<img id="pop_up_image" src="./media/dartmouth_logo.png"> 
+					<h2 id="project_name">Project Name</h2>
+					<p id="project_description">This is what the project is about.</p>
+					<p id="language_list">Languages</p>
+					<div class="bottom_panel">
+						<p class="close_pop_up" onclick="close_project()">CLOSE</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Activities -->
+		<div id="activities">
+			<h2 class="section_header">Activities</h2>
+			<h1 class="section_sub_header">Leadership and Extra Curricular Activities</h1>
+			<div class="act_entry">
+				<div class="act_title">Dartmouth Football</div>
+				<div class="act_time">Outside Linebacker - 2017-2018</div>
+				<div class="act_desc">Balanced 30+ hours a week of NCAA Division 1 athletics with full course load.</div>
+			</div>
+			<div class="act_entry">
+				<div class="act_title">Dartmouth Rugby</div>
+				<div class="act_time">Flanker - 2018-2019</div>
+				<div class="act_desc">Played on the 2019 National Championship team. Balanced 20+ hours a week of athletics with full course load.</div>
+			</div>
+			<div class="act_entry">
+				<div class="act_title">Bait and Bullet Club</div>
+				<div class="act_time">Chairmen - 2017-present</div>
+				<div class="act_desc">Certified Leader with Dartmouth Outing Club. Lead quarterly student and alumni trips to the 27,000 acre Dartmouth College Grant.</div>
+			</div>
+			<div class="act_entry">
+				<div class="act_title">Wellspring Church</div>
+				<div class="act_time">Student Leader - 2019-present</div>
+				<div class="act_desc">Work with church leaders and college students to organize student programs at Wellspring Church.</div>
 			</div>
 		</div>
 

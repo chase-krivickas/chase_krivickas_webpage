@@ -20,7 +20,7 @@ body {
 /* Common */
 .section_header {
     margin: 0;
-    padding-top: 150px;
+    padding-top: 100px;
     color: #ac9572;
     font-size: 30px;
 }
@@ -426,15 +426,128 @@ body {
     margin: 0;
     padding: 0;
 }
+.project_dir {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+}
 .projects_image_box {
     display: flex;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 40px;
 }
 .project_image {
-    width: 20%;
-    padding: 2%;
+    width: 20vw;
+    height: 20vw;
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+    padding: 0;
+    background-color: white;
+}
+.project_image:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+#project_detail {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(207, 204, 204);
+}
+.pop_up {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.pop_up_box {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: white;
+    color: black;
+    max-width: 80%;
+    
+}
+#pop_up_image {
+    max-width: 100%;
+    max-height: 55vh;
+    padding-top: 15px
+}
+#project_name {
+    color: black;
+    text-align: left;
+    font-size: 25px;
+    padding: 15px;
+    margin: 0;
+}
+#project_description {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.5;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#language_list {
+    color: gray;
+    text-align: left;
+    font-size: 15px;
+    padding: 15px;
+}
+.bottom_panel {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+}
+.close_pop_up {
+    font-size: 15px;
+    padding-right: 15px;
+}
+.close_pop_up:hover {
+    color: #6c9ecf;
+    cursor: pointer;
+}
+
+/* Activities Section */
+#activities {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 100%; 
+    padding-bottom: 100px;
+}
+.act_entry {
+    margin-top: 50px;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+.act_title {
+    color: #ac9572;
+    font-size: 30px;
+}
+.act_time {
+    margin-top: 20px;
+    color: gray;
+    font-size: 20px;
+}
+.act_desc {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
 }
 
 /* Contact section */
